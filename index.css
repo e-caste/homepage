@@ -1,0 +1,8 @@
+html {
+    background: url("DJI_0380.MP4") no-repeat center center fixed;
+    background-color: #272727;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
