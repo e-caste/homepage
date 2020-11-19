@@ -8,6 +8,13 @@
 /*    background-size: cover;*/
 /*}*/
 
+@font-face {
+    font-family: 'sf_pro_displaythin';
+    src: url("fonts/sf-pro-display-thin-webfont.woff2") format("woff2"), url("fonts/sf-pro-display-thin-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*see https://css-tricks.com/full-page-background-video-styles/*/
 video {
     object-fit: cover;
@@ -25,4 +32,8 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: sf_pro_displaythin;
+    font-size: 2em;
+    color: white;
+    text-shadow: 0.01em 0.01em 1px #272727;
 }
