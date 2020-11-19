@@ -1,9 +1,28 @@
 /*see https://css-tricks.com/perfect-full-page-background-image/*/
-html {
-    background: url("DJI_0380.MP4") no-repeat center center fixed;
-    background-color: #272727;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+/*html {*/
+/*    background: url("DJI_0380.MP4") no-repeat center center fixed;*/
+/*    background-color: #272727;*/
+/*    -webkit-background-size: cover;*/
+/*    -moz-background-size: cover;*/
+/*    -o-background-size: cover;*/
+/*    background-size: cover;*/
+/*}*/
+
+/*see https://css-tricks.com/full-page-background-video-styles/*/
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#content {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
