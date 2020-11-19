@@ -26,10 +26,11 @@ video {
 }
 
 #content {
+    padding-top: 20vh;
     position: relative;
     height: 100vh;
     text-align: center;
-    display: flex;
+    /*display: flex;*/
     align-items: center;
     justify-content: center;
     font-family: sf_pro_displaythin;
