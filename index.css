@@ -26,9 +26,9 @@ video {
 }
 
 #content {
-    padding-top: 20vh;
+    margin-top: 20vh;
     position: relative;
-    height: 100vh;
+    height: 79vh;
     text-align: center;
     /*display: flex;*/
     align-items: center;
