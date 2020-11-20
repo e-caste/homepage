@@ -33,4 +33,4 @@ setVideo();
 
 // call repeatedly
 setInterval(setTime, 1000);
-setInterval(setVideo, 60 * 1000);
+setInterval(setVideo, 15 * 60 * 1000);
