@@ -18,7 +18,6 @@ const setTime = () => {
     timeSpan.textContent = `${h}:${m}`;
 }
 
-// change video every hour
 const setVideo = () => {
     const d = new Date();
     const sunrise = d.sunrise(lat, lon);
