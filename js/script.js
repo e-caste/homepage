@@ -4,10 +4,20 @@ const video = document.getElementById("video");
 const videoPaths = {
     day: [],
     night: [],
-}
+};
 const lat = -1;
 const lon = -1;
 const getRandomElement = array => array[Math.floor(Math.random() * array.length)];
+
+// only set time every minute instead of every second
+const callSetTime = () => {
+    setTime();
+    const s = new Date().getSeconds();
+    setTimeout(() => {
+        setTime();
+        setInterval(setTime, 60 * 1000);
+    }, (60 - s) * 1000);
+}
 
 const setTime = () => {
     const d = new Date();
@@ -27,9 +37,9 @@ const setVideo = () => {
 }
 
 // call immediately
-setTime();
+callSetTime();
 setVideo();
 
 // call repeatedly
-setInterval(setTime, 1000);
 setInterval(setVideo, 15 * 60 * 1000);
+// setTime is also called every minute
