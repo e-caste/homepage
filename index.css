@@ -42,3 +42,20 @@ video {
     color: white;
     text-shadow: 0.01em 0.01em 1px #272727;
 }
+
+#searchbar {
+    margin-top: 20vh;
+}
+
+input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: grey;
+    color: white;
+    font-size: 0.75em;
+    background-color: transparent;
+}
+
+input:focus {
+    border-color: white;
+}
