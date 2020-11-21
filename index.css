@@ -59,3 +59,7 @@ input {
 input:focus {
     border-color: white;
 }
+
+#shortcuts {
+    margin-top: 9rem;
+}
