@@ -30,7 +30,7 @@ video {
 }
 
 #content {
-    margin-top: 20vh;
+    margin-top: 15vh;
     position: relative;
     height: 79vh;
     text-align: center;
@@ -61,5 +61,5 @@ input:focus {
 }
 
 #shortcuts {
-    margin-top: 9rem;
+    margin-top: 14rem;
 }
