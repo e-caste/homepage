@@ -2,9 +2,6 @@
 
 ![screenshot](readme/screenshot.png)
 
-This minimal browser homepage works based on the fact that, since the background video is stored on the local machine, it does not need to be optimized.  
-As an example, some of the videos I am using are 100 Mbps 4K DJI Mavic Air mp4s.
-
 ### Features
 
 This homepage provides:
@@ -16,7 +13,7 @@ This homepage provides:
 All in a minimal self-contained package, with no external libraries or API calls, granting a fully offline-compatible experience.
 
 #### Usage
-Just set the videoPaths, lat(itude), lon(gitude), name, and videoChangeFrequency variables in `js/script.js`.  
+Just set the `videoPaths`, `lat`itude, `lon`gitude, `name`, and `videoChangeFrequency` variables in `js/script.js`.  
 Example:
 ```javascript
 const videoPaths = {
@@ -33,3 +30,7 @@ const lon = 25.847215;
 const name = "Joe";
 const videoChangeFrequency = 20;  // minutes
 ```
+
+📼 You simply need to bring your own videos.  
+Since these are supposed to be stored locally on your machine, you don't have to optimize them like you would if this was an Internet website.  
+I have even tested 100 Mbps 4K videos with a very small impact on resource usage.
