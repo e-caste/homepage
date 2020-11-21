@@ -2,8 +2,8 @@
 
 ![screenshot](readme/screenshot.png)
 
-This minimal browser homepage works based on the fact that, since the background video is stored on the local machine, it does not need to be optimized at all.  
-As an example, here I am using a DJI Mavic Air 100Mbps 4K video.
+This minimal browser homepage works based on the fact that, since the background video is stored on the local machine, it does not need to be optimized.  
+As an example, some of the videos I am using are 100 Mbps 4K DJI Mavic Air mp4s.
 
 ### Features
 
