@@ -9,6 +9,8 @@ const videoPaths = {
 const lat = -1;
 const lon = -1;
 const name = "";
+const videoChangeFrequency = 15;  // minutes
+
 const getRandomElement = array => array[Math.floor(Math.random() * array.length)];
 
 // only set time every minute instead of every second
@@ -44,5 +46,5 @@ callSetTime();
 setVideo();
 
 // call repeatedly
-setInterval(setVideo, 15 * 60 * 1000);
+setInterval(setVideo, videoChangeFrequency * 60 * 1000);
 // setTime is also called every minute
