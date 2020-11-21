@@ -1,5 +1,6 @@
 const timeSpan = document.getElementById("time");
 const video = document.getElementById("video");
+const hello = document.getElementById("hello");
 
 const videoPaths = {
     day: [],
@@ -7,6 +8,7 @@ const videoPaths = {
 };
 const lat = -1;
 const lon = -1;
+const name = "";
 const getRandomElement = array => array[Math.floor(Math.random() * array.length)];
 
 // only set time every minute instead of every second
@@ -37,6 +39,7 @@ const setVideo = () => {
 }
 
 // call immediately
+hello.innerText = `Hello ${name || "there"}`;
 callSetTime();
 setVideo();
 
