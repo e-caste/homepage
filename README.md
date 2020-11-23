@@ -34,3 +34,5 @@ const videoChangeFrequency = 20;  // minutes
 📼 You simply need to bring your own videos.  
 Since these are supposed to be stored locally on your machine, you don't have to optimize them like you would if this was an Internet website.  
 I have even tested 100 Mbps 4K videos with a very small impact on resource usage.
+
+✅ The final step is setting the `index.html` file contained in this repository as the homepage (some call it startpage) in your browser's settings. Now when you will open a new browser window or tab you will see this page! 
