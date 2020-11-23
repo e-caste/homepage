@@ -56,7 +56,7 @@ video {
 input {
     outline: 0;
     border-width: 0 0 2px;
-    border-color: grey;
+    border-color: rgba(255, 255, 255, 0.1);
     color: white;
     font-size: 0.75em;
     background-color: transparent;
