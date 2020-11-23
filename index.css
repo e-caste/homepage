@@ -61,7 +61,7 @@ input:focus {
 }
 
 #shortcuts {
-    margin-top: 14rem;
+    margin-top: 16rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
