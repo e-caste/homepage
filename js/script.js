@@ -46,5 +46,5 @@ callSetTime();
 setVideo();
 
 // call repeatedly
-setInterval(setVideo, videoChangeFrequency * 60 * 1000);
+setInterval(() => location.reload(true), videoChangeFrequency * 60 * 1000);
 // setTime is also called every minute
