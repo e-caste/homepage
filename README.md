@@ -13,7 +13,7 @@ This homepage provides:
 All in a minimal self-contained package, with no external libraries or API calls, granting a fully offline-compatible experience.
 
 #### Usage
-Just set the `videoPaths`, `lat`itude, `lon`gitude, `name`, and `videoChangeFrequency` variables in `js/script.js`.  
+Just set the `videoPaths`, `lat`itude, `lon`gitude, `name`, `videoChangeFrequency`, and `url*` variables in `js/script.js`.  
 Example:
 ```javascript
 const videoPaths = {
@@ -29,6 +29,11 @@ const lat = 66.545181;
 const lon = 25.847215;
 const name = "Joe";
 const videoChangeFrequency = 20;  // minutes
+const urlHeimdall = "http://localhost:8080";
+const urlGitHub = "https://github.com/e-caste/homepage";
+const urlNextcloud = "https://cloud.nextcloud.com";
+const urlJitsi = "https://jitsi.org";
+const urlGrafana = "https://grafana.com";
 ```
 
 📼 You simply need to bring your own videos.  
