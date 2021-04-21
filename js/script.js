@@ -1,7 +1,4 @@
-const timeSpan = document.getElementById("time");
-const video = document.getElementById("video");
-const hello = document.getElementById("hello");
-
+// fill with your custom info
 const videoPaths = {
     day: [],
     night: [],
@@ -10,6 +7,21 @@ const lat = -1;
 const lon = -1;
 const name = "";
 const videoChangeFrequency = 15;  // minutes
+const urlHeimdall = "";
+const urlGitHub = "";
+const urlNextcloud = "";
+const urlJitsi = "";
+const urlGrafana = "";
+
+
+const timeSpan = document.getElementById("time");
+const video = document.getElementById("video");
+const hello = document.getElementById("hello");
+const aHeimdall = document.getElementById("link-heimdall");
+const aGitHub = document.getElementById("link-github");
+const aNextcloud = document.getElementById("link-nextcloud");
+const aJitsi = document.getElementById("link-jitsi");
+const aGrafana = document.getElementById("link-grafana");
 
 const getRandomElement = array => array[Math.floor(Math.random() * array.length)];
 
@@ -42,6 +54,11 @@ const setVideo = () => {
 
 // call immediately
 hello.innerText = `Hello ${name || "there"}`;
+aHeimdall.href = urlHeimdall;
+aGitHub.href = urlGitHub;
+aNextcloud.href = urlNextcloud;
+aJitsi.href = urlJitsi;
+aGrafana.href = urlGrafana;
 callSetTime();
 setVideo();
 
