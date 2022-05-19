@@ -41,6 +41,17 @@ video {
     text-shadow: 0.01em 0.01em 1px #272727;
 }
 
+#update-videos {
+    margin-top: -10vh;
+    margin-left: 90vw;
+    border: none;
+    background-color: transparent;
+}
+
+#update-videos:hover {
+    cursor: pointer;
+}
+
 #hello {
     margin-top: 0;
 }
