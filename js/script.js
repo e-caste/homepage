@@ -12,6 +12,7 @@ const urlGitHub = "";
 const urlNextcloud = "";
 const urlJitsi = "";
 const urlGrafana = "";
+const urlUpptime = "";
 
 
 const timeSpan = document.getElementById("time");
@@ -23,6 +24,7 @@ const aGitHub = document.getElementById("link-github");
 const aNextcloud = document.getElementById("link-nextcloud");
 const aJitsi = document.getElementById("link-jitsi");
 const aGrafana = document.getElementById("link-grafana");
+const aUpptime = document.getElementById("link-upptime");
 
 const updateVideosMessage = "This button will download all the Apple Aerial videos.\n⚠️ It could require ~40 GBs! ⚠️\n" +
     "For an easier download experience, in Safari, go to Preferences -> Websites -> Downloads " +
@@ -118,6 +120,7 @@ aGitHub.href = urlGitHub;
 aNextcloud.href = urlNextcloud;
 // aJitsi.href = urlJitsi;
 aGrafana.href = urlGrafana;
+aUpptime.href = urlUpptime;
 
 callSetTime();
 setVideo();
