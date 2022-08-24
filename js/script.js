@@ -3,8 +3,8 @@ const videoPaths = {
     day: [],
     night: [],
 };
-const lat = -1;
-const lon = -1;
+let lat = -1;
+let lon = -1;
 const name = "";
 const videoChangeFrequency = 15;  // minutes
 const urlHeimdall = "";
@@ -52,11 +52,21 @@ const setTime = () => {
 }
 
 const setVideo = () => {
+    const areCoordinatesAvailable = () => lat !== -1 && lon !== -1;
+
+    ! areCoordinatesAvailable() && setGeolocation();
+
     const d = new Date();
     const sunrise = d.sunrise(lat, lon);
     const sunset = d.sunset(lat, lon);
-    if (d >= sunrise && d < sunset) video.src = getRandomElement(videoPaths.day);
-    else video.src = getRandomElement(videoPaths.night);
+    if (d >= sunrise && d < sunset) {
+        video.src = getRandomElement(videoPaths.day);
+        console.info("Using day videos based on your position.")
+    }
+    else {
+        video.src = getRandomElement(videoPaths.night);
+        console.info("Using night videos based on your position.")
+    }
 }
 
 const updateVideos = async () => {
@@ -110,6 +120,16 @@ const updateVideos = async () => {
     } else {
         alert("Download has been aborted as asked.")
     }
+}
+
+const setGeolocation = () => {
+    const setCoordinates = position => {
+        lat = position.coords.latitude;
+        lon = position.coords.longitude;
+        console.info(`Position set to: ${lat}, ${lon}`);
+    }
+
+    navigator.geolocation.getCurrentPosition(setCoordinates, undefined, undefined);
 }
 
 // call immediately
